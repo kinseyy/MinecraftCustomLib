@@ -1,0 +1,26 @@
+name: "FlameCustomLib"
+author: ENDER
+description: Custom lib can help you with placeholders.
+main: az.ender.customlib.main
+version: "PUBLIC"
+api-version: 1.13
+prefix: CustomLib
+webside: "https://github.com/kinseyy"
+commands:
+  clib:
+    description: Main
+    permission: customlib.command
+    aliases:
+      - cl
+      - customlib
+permissions:
+  customlib.command:
+    description: Allow use /clib
+    usage: "[CustomLib] /clib reload \ version"
+    default: op
+  customlib.user:
+    description: Block this command for users.
+    usage: "[ERR!] This thing is not allowed for you."
+    default: not op
+depend:
+  - PlaceholderAPI
